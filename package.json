@@ -1,6 +1,6 @@
 {
   "name": "react-table-application",
-  "homepage": "https://react-table-application.netlify.app/",
+  "homepage": "https://react-table-application.netlify.app/react-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
