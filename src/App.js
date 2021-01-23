@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-//import axios from 'axios'
 import products_data from "./product_data.json"
 import ReactTable from "react-table"; 
 import 'react-table/react-table.css';
-//import { Form} from 'react-bootstrap';
 import TableFilter from 'react-table-filter';
 import 'react-table-filter/lib/styles.css';
 
@@ -11,8 +9,6 @@ export default class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      //products: [],
-      //loading:true,
       'updatedData': products_data
     };
     this._filterUpdated = this._filterUpdated.bind(this);
@@ -107,10 +103,6 @@ export default class App extends Component {
       <ReactTable  
     defaultPageSize={10}
     data={updatedData} 
-    /*filtered={[{ 
-      id: 'subType',
-      value: this.state.subtype,
-    }]}*/ 
     columns={columns}  
  />
  <TableFilter
@@ -124,8 +116,6 @@ export default class App extends Component {
   </th>
 </TableFilter>
     </div>
-    
-    
   )
   }
 }
