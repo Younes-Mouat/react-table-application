@@ -2,7 +2,7 @@ command = "npm run build"
 publish="build/"
 base = ""
 [[redirects]]
-  from = "/index.html"
-  to = "/index.js"
+  from = "/*"
+  to = "/src/index.js"
   status = 200
   force = true
